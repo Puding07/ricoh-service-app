@@ -1,0 +1,1 @@
+{"_id":{"$oid":"617aa830402124bdc7ad0c4f"},"name":"MPC3004SP","code":"","pdf":{"parts_cat":{"printer":{},"peripheral":{}},"service_man":{"printer":{},"ptp_diag":{},"peripheral":{}},"bulletins":{"printer":{},"peripheral":{}}},"parts":[{"product_number":"D2399591","name":"NVRAM"}]}

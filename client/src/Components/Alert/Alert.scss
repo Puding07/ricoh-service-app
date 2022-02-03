@@ -1,0 +1,35 @@
+@use "../../colors.scss";
+
+.alert-message {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  min-width: 25vw;
+  min-height: 20vh;
+  border-radius: 3rem;
+
+  background-color: colors.$backg;
+  box-shadow: 0px 6px 15px 0 rgba(0, 0, 0, 0.15);
+
+  h1 {
+    color: colors.$delete;
+  }
+
+  span {
+    font-size: 135%;
+    padding: 2rem;
+  }
+
+  input {
+    width: 30%;
+    height: 3rem;
+    color: colors.$text;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    background-color: colors.$green;
+    border-color: rgba(255, 255, 255, 0);
+  }
+}

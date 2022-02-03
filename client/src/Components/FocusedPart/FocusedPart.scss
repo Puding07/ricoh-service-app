@@ -1,0 +1,28 @@
+@use "../../colors.scss";
+
+.focused-part {
+  position: relative;
+
+  .title {
+    width: 95%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    h1 {
+      font-size: 300%;
+      font-weight: 700;
+      color: colors.$light-blue;
+    }
+
+    p:first-of-type {
+      color: colors.$orange;
+    }
+
+    p {
+      font-size: 250%;
+    }
+  }
+}

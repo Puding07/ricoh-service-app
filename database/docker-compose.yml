@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  mongodb1:
+    image: mongo:4.4.10
+    hostname: rsa-db
+    container_name: rsa-db
+    networks:
+      - rsa-net
+    volumes:
+      - rsadata1:/data/db
+    ports:
+      - 3011:27017
+    entrypoint:
+      ["/usr/bin/mongod", "--bind_ip_all", "--journal", "--replSet", "rsamongo"]
+    restart: always
+
+volumes:
+  rsadata1:
+
+networks:
+  rsa-net:

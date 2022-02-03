@@ -1,0 +1,13 @@
+@use "../../colors.scss";
+
+.features {
+  width: 95%;
+  max-width: 1100px;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: colors.$hovered-item;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

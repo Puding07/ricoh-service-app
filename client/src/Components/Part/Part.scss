@@ -1,0 +1,94 @@
+@use "../../colors.scss";
+
+.statused {
+  grid-template-columns: 10% 75% 15%;
+}
+
+.nonstatused {
+  grid-template-columns: 10% 90%;
+}
+
+.part {
+  width: 95%;
+  max-width: 850px;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0.5rem;
+
+  display: grid;
+  position: relative;
+
+  &:hover .item-button {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .item {
+    width: 95%;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item:hover {
+    cursor: pointer;
+  }
+
+  .counter {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .status {
+    position: relative;
+    width: 90%;
+    justify-content: center;
+  }
+
+  .opened {
+    position: absolute;
+    min-height: 5rem;
+    min-width: 7rem;
+    top: 3rem;
+    border-radius: 0.5rem;
+    z-index: 5;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: colors.$new;
+
+    p {
+      height: 2rem;
+      width: 7rem;
+      border-radius: 0.5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    p:hover {
+      background-color: colors.$new-hovered;
+    }
+  }
+
+  .closed {
+    display: none;
+  }
+
+  p {
+    font-size: 120%;
+    font-weight: 600;
+  }
+}
+
+.disabled-part {
+  .item:hover {
+  }
+}

@@ -1,0 +1,46 @@
+version: "3.8"
+
+services:
+  mongodb1:
+    image: mongo:4.4.10
+    hostname: rsa-db
+    container_name: rsa-db
+    networks:
+      - rsa-net
+    volumes:
+      - rsadata1:/data/db
+      - "./database/scripts:/mongo"
+    entrypoint: ["sh", "/mongo/docker.sh"]
+    ports:
+      - 3011:27017
+    restart: always
+
+  rsa-api:
+    image: node:14
+    hostname: rsa-api
+    container_name: rsa-api
+    networks:
+      - rsa-net
+    volumes:
+      - "./server:/usr/src/app:ro"
+    command: bash -c "wget https://fastdl.mongodb.org/tools/db/mongodb-database-tools-debian92-x86_64-100.3.1.deb && apt install ./mongodb-database-tools-*.deb && rm -f mongodb-database-tools-*.deb && node /usr/src/app/dist/server.js"
+    ports:
+      - "3010:80"
+    restart: always
+
+  nginx_brotli:
+    image: fholzer/nginx-brotli
+    container_name: rsa-client
+    volumes:
+      - "./client/docker/brotli/nginx.conf:/etc/nginx/nginx.conf:ro"
+      - "./client/docker/brotli/custom.conf:/etc/nginx/custom.conf:ro"
+      - "./client/dist:/etc/nginx/html:ro"
+    ports:
+      - "3012:80"
+    restart: always
+
+volumes:
+  rsadata1:
+
+networks:
+  rsa-net:

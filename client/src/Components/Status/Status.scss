@@ -1,0 +1,9 @@
+@use '../../colors.scss';
+
+.status {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}

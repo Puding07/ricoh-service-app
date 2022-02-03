@@ -1,0 +1,24 @@
+@use "../../colors.scss";
+
+.plus-part {
+  width: 45%;
+  max-width: 850px;
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: colors.$list-item;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: colors.$new-hovered;
+    cursor: pointer;
+  }
+
+  p {
+    font-size: 120%;
+    font-weight: 600;
+  }
+}

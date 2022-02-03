@@ -1,0 +1,6 @@
+{"_id":{"$oid":"617bd7497d8063fcc461eb98"},"name":"Felmérésre vár"}
+{"_id":{"$oid":"617bd7517d8063fcc461eb99"},"name":"Felmérésre folyamatban"}
+{"_id":{"$oid":"617bd7637d8063fcc461eb9a"},"name":"Alkatrész rendelés"}
+{"_id":{"$oid":"617bd76e7d8063fcc461eb9b"},"name":"Javításra vár"}
+{"_id":{"$oid":"617bd7727d8063fcc461eb9c"},"name":"Javításra folyamatban"}
+{"_id":{"$oid":"617bd77e7d8063fcc461eb9d"},"name":"Kész"}

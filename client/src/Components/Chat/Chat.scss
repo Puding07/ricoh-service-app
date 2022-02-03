@@ -1,0 +1,11 @@
+@use '../../colors.scss';
+
+.chat {
+  display: none;
+  height: 90vh;
+  width: 20%;
+  margin: 1.5rem;
+  border-radius: 2rem 4rem 4rem 2rem;
+  background-color: colors.$chat-blue;
+  box-shadow: -8px 6px 15px 0 rgba(0, 0, 0, 0.15);
+}

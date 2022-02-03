@@ -1,0 +1,38 @@
+{
+  "_id": { "$oid": "617aa4155e3515ab2e616fbc" },
+  "serial": "G696M533761",
+  "type": "MPC3004SP",
+  "connected": { "finisher": {}, "paperBank": {}, "fiery": {} },
+  "user": "Tóth Áron",
+  "customer": "",
+  "trader": "",
+  "hdd": "w765c82",
+  "features": {
+    "documentFeeder": true,
+    "duplex": true,
+    "paperBank": false,
+    "bypass": true,
+    "sortingTray": false,
+    "largeCapacityTray": false,
+    "puncher": false,
+    "printerScanner": true,
+    "fax": true,
+    "wheeledTable": false,
+    "ps": true,
+    "faxTray": false,
+    "java": true,
+    "fiery": false
+  },
+  "inPrints": { "bw": 126587.0, "colour": 75682.0 },
+  "outPrints": { "bw": 0.0, "colour": 0.0 },
+  "status": "Kész",
+  "sideState": "",
+  "eventLog": [],
+  "difficulty": 0,
+  "startOfDoc": null,
+  "endOfDoc": null,
+  "parts": [
+    { "product_number": "D2399591", "name": "NVRAM", "status": "raktáron" },
+    { "product_number": "D6842171", "name": "DF Belt", "status": "érkező" }
+  ]
+}

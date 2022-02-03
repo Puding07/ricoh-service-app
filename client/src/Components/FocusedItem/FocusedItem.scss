@@ -1,0 +1,44 @@
+@use "../../colors.scss";
+
+.focused-item {
+  position: relative;
+
+  .title {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+    p:first-of-type {
+      font-size: 300%;
+      font-weight: 600;
+      color: colors.$light-blue;
+    }
+
+    p:nth-of-type(2) {
+      font-size: 240%;
+    }
+
+    p:last-of-type {
+      font-size: 140%;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      background-color: colors.$backg;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .printer-parts {
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}

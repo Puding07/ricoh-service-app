@@ -1,0 +1,38 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.13.1",
+    "babel-polyfill": "^6.26.0",
+    "@babel/preset-env": "^7.13.5",
+    "@webpack-cli/init": "^1.1.3",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.0",
+    "path": "^0.12.7",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-node-externals": "^2.5.2"
+  },
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "name": "my-webpack-project",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "node ./dist/server.js",
+    "dev": "nodemon ./src/server.js",
+    "docker-build": "docker build -t rsa-server-image .",
+    "docker-start": "docker run -dp 3010:3010 --network=database_rsa-net rsa-server"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.18",
+    "node-rsa": "^1.1.1",
+    "nodemon": "^2.0.7",
+    "socket.io": "^4.0.0"
+  }
+}

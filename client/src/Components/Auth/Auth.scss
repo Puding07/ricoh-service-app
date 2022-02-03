@@ -1,0 +1,86 @@
+@use "../../colors";
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap");
+
+.auth {
+  min-height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Oxanium", cursive;
+
+  form {
+    position: relative;
+    min-width: 45rem;
+    min-height: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    background-color: colors.$mid-component;
+    border-radius: 5rem;
+
+    box-shadow: 0px 6px 15px 0 rgba(0, 0, 0, 0.15);
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .password-conatiner {
+      position: relative;
+      min-width: 80%;
+
+      .input_passw {
+        width: 100%;
+      }
+
+      .label_checkbox {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+      }
+    }
+
+    .input_email,
+    .input_passw {
+      height: 4rem;
+      min-width: 80%;
+      background-color: colors.$backg;
+      border-color: rgba(255, 255, 255, 0);
+      border-radius: 2rem;
+      padding: 0.2rem;
+      font-size: 2rem;
+      color: colors.$text;
+      text-indent: 2rem;
+    }
+
+    input::placeholder {
+      color: colors.$text;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    input:focus,
+    button:focus {
+      outline: none;
+    }
+
+    .login {
+      width: 30%;
+      height: 3rem;
+      color: colors.$text;
+      font-size: 1.5rem;
+      font-weight: 600;
+      border-radius: 2rem;
+      background-color: colors.$green;
+      border-color: rgba(255, 255, 255, 0);
+    }
+  }
+}
+
+.root {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}

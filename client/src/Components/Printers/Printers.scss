@@ -1,0 +1,17 @@
+@use '../../colors.scss';
+
+.printers {
+  .search-filter .name {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .printer-items {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    flex: 1 0 200px;
+  }
+}

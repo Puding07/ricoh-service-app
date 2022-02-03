@@ -1,0 +1,47 @@
+@use "../../colors.scss";
+
+.settings {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .chat-head {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .info {
+    width: 75%;
+    padding: 2rem;
+    font-size: 180%;
+
+    tr {
+      text-align: center;
+    }
+
+    th {
+      text-align: left;
+    }
+
+    td {
+      width: 65%;
+    }
+
+    th,
+    td {
+      padding-bottom: 2rem;
+    }
+  }
+
+  .button {
+    width: 85%;
+  }
+
+  a {
+    color: colors.$text;
+
+    &:visited {
+      color: colors.$text;
+    }
+  }
+}

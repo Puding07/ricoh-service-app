@@ -1,0 +1,16 @@
+@use "../../colors.scss";
+
+.user {
+  width: 9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  > span {
+    font-size: 125%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

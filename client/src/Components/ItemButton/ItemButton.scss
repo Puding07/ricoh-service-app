@@ -1,0 +1,17 @@
+@use "../../colors.scss";
+
+.item-button {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: colors.$item-button;
+  box-shadow: -4px 4px 15px -5px #000040;
+
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+}

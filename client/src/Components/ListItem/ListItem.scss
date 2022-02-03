@@ -1,0 +1,88 @@
+@use "../../colors.scss";
+
+.list-item {
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  height: 7rem;
+  margin: 1rem;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  border-radius: 1.3rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  user-select: none;
+
+  &:hover {
+    background-color: colors.$hovered-item;
+    cursor: pointer;
+  }
+
+  .grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    //grid-template-columns: 10% 35% 15% 40%;
+    grid-template-columns: 35% 25% 40%;
+    grid-template-rows: 50%;
+    grid-template-areas:
+      "name empty serial"
+      "status empty ual";
+
+    > * {
+      justify-self: center;
+      align-self: center;
+    }
+
+    .banner {
+      grid-area: banner;
+    }
+
+    .name {
+      grid-area: name;
+      font-size: 190%;
+      font-weight: 600;
+    }
+
+    .serial {
+      grid-area: serial;
+      font-size: 190%;
+      font-weight: 600;
+    }
+
+    .status {
+      grid-area: status;
+      font-size: 125%;
+    }
+
+    .ual {
+      min-width: 17rem;
+      grid-area: ual;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  &:hover .item-button {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.disabled {
+  background: none;
+  color: rgba(255, 255, 255, 0.25);
+
+  &:hover {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+
+.list-item:last-of-type {
+  margin-bottom: 2rem;
+}

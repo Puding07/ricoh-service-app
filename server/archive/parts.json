@@ -1,0 +1,7 @@
+{
+  "_id": { "$oid": "617aa67d402124bdc7ad0c4e" },
+  "name": "NVRAM",
+  "image": {},
+  "product_number": "D2399591",
+  "links": ["MP C3004SP"]
+}
